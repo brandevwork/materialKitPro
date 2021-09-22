@@ -25,6 +25,7 @@ export default class Gallery extends React.Component {
         showsHorizontalScrollIndicator={false}
         onScroll={Animated.event([{ nativeEvent: { contentOffset: { x: this.scrollX } } }], {useNativeDriver: false})}
       >
+        
         {images.map((image, key) => (
           <Image
             key={`gallery-image-${key}`}
